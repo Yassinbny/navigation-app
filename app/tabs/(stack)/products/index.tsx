@@ -17,7 +17,10 @@ const ProductsScreen = () => {
               <Text className="font-work-black">${item.price}</Text>
               <Link
                 className="text-primary"
-                href={{ pathname: "/products/[id]", params: { id: item.id } }}
+                href={{
+                  pathname: "/tabs/products/[id]",
+                  params: { id: item.id },
+                }}
               >
                 View Details
               </Link>
