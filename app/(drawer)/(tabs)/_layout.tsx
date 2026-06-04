@@ -7,13 +7,13 @@ const TabsLayout = () => {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "indigo",
-        headerShown: false,
       }}
     >
       <Tabs.Screen
         name="(stack)"
         options={{
           title: "Stack",
+          headerShown: false,
           tabBarIcon: ({ color }) => (
             <Ionicons name="list-outline" color={color} size={20} />
           ),

@@ -13,6 +13,19 @@ const Drawerlayout = () => {
         sceneStyle: { backgroundColor: "white" },
       }}
     >
+      {" "}
+      <Drawer.Screen
+        name="(tabs)" // This is the name of the page and must match the url from root
+        options={{
+          drawerLabel: "Tabs + Stack",
+          title: "Tabs + Stack",
+          headerShown: false,
+
+          drawerIcon: ({ color, size }) => (
+            <Ionicons name="albums-outline" color={color} size={size} />
+          ),
+        }}
+      />
       <Drawer.Screen
         name="user/index" // This is the name of the page and must match the url from root
         options={{

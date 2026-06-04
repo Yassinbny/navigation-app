@@ -18,7 +18,7 @@ const ProductsScreen = () => {
               <Link
                 className="text-primary"
                 href={{
-                  pathname: "/tabs/products/[id]",
+                  pathname: "/products/[id]",
                   params: { id: item.id },
                 }}
               >
